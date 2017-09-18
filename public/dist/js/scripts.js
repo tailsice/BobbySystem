@@ -23,7 +23,7 @@
 
     $("button.btn").click(function(){
     	var text = $("#mainDiv textarea").val();
-    	var url = $("button.btn").attr("toUrl");
+    	var url = $(this).attr("toUrl");
     	$.post(url,{
     		text : text
     	},function(data){
